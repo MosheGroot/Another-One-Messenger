@@ -46,4 +46,9 @@ Date: 13.10.2024
    - All disputes arising from this Agreement shall be resolved in accordance with the laws of the country where the company is registered.
    - If any provision of this Agreement is found to be invalid, it shall not affect the validity of the remaining provisions.
 
+12. Versioning and Access:
+   - The official start of product use and the opening of public access for contributions and modifications will commence with versions v1.0.0+.
+   - Until then, only individual modifications will be allowed, made by the current head of the company or the development team, without public discussions or changes.
+   - This clause is temporary and will remain in effect until the release of version v1.0.0+.
+
 The full text of the GNU General Public License (GPL) version 3 is attached to this Agreement. For more information, see <https://www.gnu.org/licenses/gpl-3.0.html>.
