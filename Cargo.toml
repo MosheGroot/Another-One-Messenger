@@ -1,0 +1,19 @@
+[package]
+name = "Another-One-Messenger"
+version = "0.0.1"
+edition = "2021"
+
+[[bin]]
+name = "client"
+path = "client/client.rs"
+
+[[bin]]
+name = "server"
+path = "server/server.rs"
+
+[lib]
+name = "database"
+path = "database/database.rs"
+
+[dependencies]
+

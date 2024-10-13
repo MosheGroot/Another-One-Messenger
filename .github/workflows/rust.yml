@@ -1,0 +1,38 @@
+name: Rust CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Set up Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          override: true
+          components: clippy
+          profile: minimal
+
+      - name: Code check
+        run: cargo check
+
+      - name: Build client
+        run: cargo build --bin client
+
+      - name: Build server
+        run: cargo build --bin server
+
+      - name: Run tests
+        run: cargo test
+
